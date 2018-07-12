@@ -5,7 +5,7 @@ def prime?(n)
   elsif n < 0  || n == 0 || n == 1
     return false
     
-  elsif n.odd? { |x| n % x != 0} 
+  elsif n.odd? { |x| n % x == 0} 
     return true
 
  
