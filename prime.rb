@@ -1,4 +1,19 @@
 def prime?(n)
+  start = 2
+  primes = (start..n).to_a
+  (start..n).each do |x|
+    (start..no).each do |num|
+      if ( no % num  == 0) && num != no
+        primes.delete(no)
+        break
+      end
+    end
+  end
+  primes
+end
+
+
+def prime?(n)
   if n == 2 || n == 3
     return true
     
