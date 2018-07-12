@@ -5,12 +5,9 @@ def prime?(n)
   if n < 0  || n == 0 || n == 1
     return false
     
-  elsif n.odd? { |x|  n % x != 0} 
+  elsif (2..num-1).to_a.all? { |x|  n % x != 0} 
     return true
 
- 
-  else
-    return false
 end
 end
 
