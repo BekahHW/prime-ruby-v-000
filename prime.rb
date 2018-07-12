@@ -1,12 +1,9 @@
-(2..num-1).to_a.all? do |possible_factor|
-      num % possible_factor != 0
 
 def prime?(n)
   if n < 0  || n == 0 || n == 1
     return false
     
-  elsif (2..num-1).to_a.all? { |x|  n % x != 0} 
-    return true
+  else (2..num-1).to_a.all? { |x|  n % x != 0} 
 
 end
 end
