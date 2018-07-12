@@ -1,6 +1,6 @@
 def prime?(n)
   if n.odd? { |x| n % 3 == 0} 
-    return true
+    return false
   else num < 0 or num == 0 or num == 1
     return false
 end
