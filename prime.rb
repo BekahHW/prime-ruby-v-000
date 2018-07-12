@@ -1,9 +1,10 @@
 def prime?(n)
-  if n.odd? { |x| n % 3 == 0} 
-    return false
-  elsif n == 2 
+  if n == 2 || n == 3
     return true
-    elsif n == 3
+    
+  elsif n.odd? { |x| n % 3 == 0} 
+    return false
+ 
   else n < 0  || n == 0 || n == 1
     return false
 end
