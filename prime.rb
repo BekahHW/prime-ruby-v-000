@@ -1,21 +1,8 @@
-def prime?(n)
-  primes = (start..n).to_a
-  (start..n).each do |x|
-    (start..x).each do |num|
-      if ( x % num  == 0) && num != x
-        primes.delete(x)
-        break
-      end
-    end
-  end
-  primes
-end
+(2..num-1).to_a.all? do |possible_factor|
+      num % possible_factor != 0
 
 def prime?(n)
-  if n == 2 || n == 3
-    return true
-    
-  elsif n < 0  || n == 0 || n == 1
+  if n < 0  || n == 0 || n == 1
     return false
     
   elsif n.odd? { |x|  n % x != 0} 
