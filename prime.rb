@@ -5,7 +5,7 @@ def prime?(n)
     elsif n == 2
       return true
     
-    elsif (3..num-1).odd? { |x| n % 3 != 0} 
+    elsif (3..n-1).odd? { |x| n % 3 != 0} 
        return true
 
 end
