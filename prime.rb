@@ -1,13 +1,16 @@
 def prime?(n)
-  if n < 0  || n == 0 || n == 1
+  if n == 2 || n == 3
+    return true
+    
+  elsif n < 0  || n == 0 || n == 1
     return false
     
-    elsif n == 2
-      return true
-    
-    elsif (3..n-1).odd? { |x| n % 3 != 0} 
-       return true
+  elsif n.odd? { |x| n % 3 != 0} 
+    return true
 
+ 
+  else
+    return false
 end
 end
 
