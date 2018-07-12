@@ -2,14 +2,14 @@ def prime?(n)
   if n == 2 || n == 3
     return true
     
-  elsif n.odd? { |x| n % 3 == 0} 
-    return false
+  elsif n.odd? { |x| n % 3 != 0} 
+    return true
 
  
   elsif n < 0  || n == 0 || n == 1
     return false
   else
-    return true
+    return false
 end
 end
 
