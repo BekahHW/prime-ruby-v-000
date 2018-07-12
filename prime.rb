@@ -2,6 +2,20 @@ def prime?(n)
   start = 2
   primes = (start..n).to_a
   (start..n).each do |x|
+    (start..x).each do |num|
+      if ( x % num  == 0) && num != x
+        primes.delete(x)
+        break
+      end
+    end
+  end
+  primes
+end
+
+def get_prime_no_upto(number)
+  start = 2
+  primes = (start..number).to_a
+  (start..number).each do |no|
     (start..no).each do |num|
       if ( no % num  == 0) && num != no
         primes.delete(no)
@@ -11,7 +25,6 @@ def prime?(n)
   end
   primes
 end
-
 
 def prime?(n)
   if n == 2 || n == 3
