@@ -5,7 +5,7 @@ def prime?(n)
   elsif n < 0  || n == 0 || n == 1
     return false
     
-  elsif n.any? { |x| (n % x).zero?} 
+  elsif n.all? { |x| (n % x).zero?} 
     return true
 
  
