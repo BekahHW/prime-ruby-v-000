@@ -14,7 +14,7 @@ def prime?(n)
   else (2..num-1).to_a.all? { |x|  n % x != 0} 
 end
 end
-end
+
 
 # def prime?(n)
 #   if n == 2 || n.odd? { |x| n % 3 != 0}
